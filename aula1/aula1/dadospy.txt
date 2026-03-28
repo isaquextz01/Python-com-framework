@@ -1,0 +1,417 @@
+# dados 
+# scrip - interpretar -  resposta 
+# lógica + melhorar 
+# memória ram - curta duração
+
+# 4 tipos
+
+# cadastro 
+# nome idade email peso altura endereco
+# salario > 2000
+
+# texto   -  "text"  'text'  -  nome  - email - endereco
+# inteiro - 10,  0  ,  -1  -  idade 
+# decimal - 5.2, 9.10,0.  - peso  - altura  - 
+# lógico  - True ,  False  -  saslario
+#            1        0
+
+print(10 + 2)
+print(True + 10)
+print(5.2 + 5)
+print('text' + "fhsdjkfh")
+print('fhsdgfhsdgfs')
+
+
+# concatenação juntar dados
+
+print('Olá', 'João')
+print(f'Olá {'João'}')
+
+# indentação -  organizar o código
+
+print()
+
+
+# variáveis
+
+imc = 0
+
+# Não podem por numero
+# caracteres especiais # @% &*
+
+# pode começar por letra
+# _ underline pode utilizar
+
+# seguida de um igual 
+
+# ESTRUTURA DE DADO
+
+imc = 0 
+altura  =  1.70
+peso = 62.0
+imc =  peso // (altura ** 2)
+print(imc)
+
+# sinais aritméticos 
+# +   -    *   /   %   **  // 
+
+print('SINAIS ARITMÉTICOS')
+# saída sem é um número 
+
+x = 10
+y = 20
+x = 200
+
+print(x + y)
+print(x - y)
+print(x / y)
+print(x * y)
+print(x ** y)
+
+
+print(x // y)
+print(x % y)
+
+
+# sinais lógicos 
+y = 20
+x = 200
+print(x == y) # comparação
+print(x > y) # maior
+print(x < y) # menor
+print(x >= y) # maior ou igual
+print(x <= y) # menor ou igual
+print(x != y) # diferente
+
+
+Crie um programa que: Peça ao usuário dois números. Mostre: 
+
+A soma, subtração, multiplicação e divisão.
+
+Verifique: 
+
+Se os números são iguais.
+
+
+Se o primeiro número é maior que o segundo.
+
+
+Se pelo menos um dos números é maior que 10.
+
+-------------------------------------------
+
+print() # imprime algo ambiente de teste 
+
+
+var =  10 # variáveis 
+
+
+# nome = input('Digite seu nome:  ') # dinamico 
+# # 
+
+
+# print(nome)
+
+
+# nome  = 'Julia'
+
+
+# nome  =  input('Nome: ')
+
+
+
+print('CADASTRE SEUS DADOS: ')
+# int()  float() str() bool() type casting
+
+
+nome = input('Nome: ')
+idade  = int(input('Idade: ')) + 10
+endereco  = input('Endereço: ')
+curso = input('Curso: ')
+altura = float(input('Altura'))
+saldo_banco = float(input('Saldo: '))
+
+
+print('NOME:', nome)
+print('IDADE:', idade)
+print('ENDEREÇO:', endereco)
+print('CURSO:', curso)
+print('ALTURA:', altura)
+print('SALDO NO BANCO:', saldo_banco)
+-------------------------------------
+
+Crie um programa que: Peça ao usuário dois números. Mostre: 
+
+A soma, subtração, multiplicação e divisão.
+
+Verifique: 
+
+Se os números são iguais.
+
+
+Se o primeiro número é maior que o segundo.
+
+
+Se pelo menos um dos números é maior que 10
+--
+# use apenas:
+# variáveis 
+# print()
+# input()
+# sinais aritmético + - ? * / ** % 
+# sinais lógicos <  > >=  <=  != == 
+====================================
+=================================
+==============================
+Peça o valor de um produto e: 
+
+Calcule um desconto de 10%.
+
+
+Mostre o valor final.
+
+
+Verifique se o valor final é maior que 100.
+
+
+Verifique se o produto ficou barato (menor que 50).
+====================================================
+===================================================
+
+# # 4 tipos primitivos
+# # variável
+# # Sinais aritméticos
+# # Sinais lógicos 
+
+
+
+
+# Peça o valor de um produto e:
+produto = float(input('Digite o valor do produto: '))
+
+
+# Calcule um desconto de 10%.
+
+
+desconto = produto * 0.10
+
+
+print('Desconto', desconto)
+
+
+
+# Mostre o valor final.
+
+
+# Verifique se o valor final é maior que 100.
+
+
+# Verifique se o produto ficou barato (menor que 50).
+
+==============================================
+
+==========================================
+import random
+
+
+
+lista =  [1,2,3,4,5,6,7,8,9,10]
+n_aleatorio  = random.randint(1,10)
+lista.remove(n_aleatorio)
+print(lista)
+
+
+
+# # estrura de dado
+
+
+# variavel = 10
+
+
+# # cabe apenas 1 dado
+
+
+
+# lista  =  []
+# #                      -  -2  -1
+# lista_2 = [1,2,3,4,5,6,7,8,9]
+# #         0  1  2 3 4 5 6 7 8
+
+
+
+# print(lista_2[8])
+# lista_3 = list(range(1,2000)) 
+
+
+
+# # funções para adicionar 
+
+
+
+# lista_2.append(110) # add apenas 1  dado (append)
+# print(lista_2)
+
+
+# lista_2.insert(7, 300)
+# print(lista_2)
+# # função remover
+
+
+# lista_2.extend([10,20,30,10,20,30])
+# print(lista_2)
+
+
+
+# lista_2 += (20,30360500,403070)
+# print(lista_2)
+
+
+# # remover dados 
+
+
+
+# lista_2.remove(30360500) # remove o que você vê
+# print(lista_2)
+
+
+# lista_2.pop()
+# print(lista_2) # remove o último valor
+
+
+# lista_2.pop(0) # remove a partir do indice
+# print(lista_2)
+
+
+# del lista_2[6]
+# print(lista_2)
+
+
+
+# # slice -  fatiamento
+# nova_lista = lista_2[5:9]
+
+
+# print(nova_lista)
+==========================
+=======================
+============================
+==========================
+Pergunta: Qual é o metal cujo símbolo químico é Au?
+
+
+# Resposta: Ouro. O símbolo vem do latim aurum.
+
+
+# Pergunta: Em qual continente fica o Deserto do Saara?
+
+
+# Resposta: no continente africano
+
+
+# Pergunta: Quem é o autor da obra "Dom Quixote"?
+
+
+# Resposta: Miguel de Cervantes.
+
+
+# Pergunta: Qual é o processo peça qual as plantas se transformam luz solar em energia química?
+
+
+# Resposta: Fotossíntese.
+==============================
+listas_perguntas = [
+'',    
+'Qual é o metal cujo símbolo químico é Au?',
+'Em qual continente fica o Deserto do Saara?',
+'Quem é o autor da obra "Dom Quixote"?',
+'Qual é o processo pelo qual as plantas transformam luz solar em energia química?'
+]
+
+
+pergunta =  random.choice(listas_perguntas[1:])
+print(pergunta)
+
+
+lista_respostas = [
+=====================================
+==============================
+====================
+ jogo de advinhação
+import random  
+
+
+# lista_pc  = ['😘','👍','🤣','😒']
+# # nossa_lista = ['😘','👍','🤣']
+# aleatorio = random.choice(lista_pc)
+# escolha_personagem = input('teste: ')
+# resultado = aleatorio == escolha_personagem
+
+
+# print('ACERTOU? - ', resultado)
+# print('ESCOLHA DA MAQUINA: ', aleatorio)
+# print('MINHA ESCOLHA:', escolha_personagem)
+
+
+
+===================================
+
+
+
+print('E-COMMERCE X ')
+login = input('Login: ')
+
+
+produtos  = ['','hd','memória ram','teclado','pendrive']
+valores  = [0,1000.99,2000.0,500.55,150.25]
+print('----' * 10)
+print(f'''
+    1  {produtos[1]} R$  {valores[1]}
+    2  {produtos[2]} R$  {valores[2]}
+    3  {produtos[3]} R$  {valores[4]}
+    4  {produtos[4]} R$  {valores[4]}
+      ''')
+
+
+
+prod_1 = int(input('Produto: '))
+prod_2 = int(input('Produto: '))
+prod_3 = int(input('Produto: '))
+
+
+carrinho =  []
+valor =  [] 
+
+
+carrinho.append(produtos[prod_1])
+print('No seu carrinho: ', carrinho)
+carrinho.append(produtos[prod_2])
+print('No seu carrinho: ', carrinho)
+carrinho.append(produtos[prod_3])
+print('No seu carrinho: ', carrinho)
+
+
+valor.extend([valores[prod_1], valores[prod_2], valores[prod_1]])
+
+
+soma  =  sum(valor)
+
+print(carrinho)
+
+print('R$', soma)
+======================
+# Baseado nesta atividade: 
+
+
+Cria uma lista 
+adcionar com o append():
+3 nomes
+
+
+Remover com o remove() os 2 últimos nomes
+
+
+
+
+
+
+
